@@ -176,9 +176,9 @@ a {
 }
 
 .header .header-mockup .mockup-1 {
-  right: 90px;
+  right: 180px;
   top: 20px;
-  width: 400px;
+  width: 250px;
   z-index: 999999;
 }
 
@@ -189,7 +189,7 @@ a {
   z-index: 99999;
 }
 
-.header .header-mockup .girl {
+.header .header-mockup .apples {
   left: -180px;
   top: -20px;
   width: 750px;
@@ -503,7 +503,6 @@ a {
   .header .header-mockup {
     position: static;
     display:none;
-    
   }
 
   /*start services section*/

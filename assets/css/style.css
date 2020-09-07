@@ -226,6 +226,7 @@ a {
   color: #19ABF2;
 }
 
+/*start features section*/
 .features {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -242,7 +243,6 @@ a {
 .features .content2 h3 {
   font-size: 24px;
 }
-
 
 .features .mockup {
   width: 250px;
@@ -268,8 +268,6 @@ a {
   min-height: 540px;
 }
 
-
-
 .features .app-preview img {
   position: absolute;
   width: 220px;
@@ -287,6 +285,7 @@ a {
   right: 460px;
 }
 
+/*start services section*/
 .services {
   padding: 80px 0;
   margin-top: 100px;
@@ -298,6 +297,9 @@ a {
 
 .services .service-wrapper .row {
   margin-top: 60px;
+}
+.services .service-wrapper .phone-mock{
+  width: 45%;
 }
 
 .services .service-wrapper h2 {
@@ -337,6 +339,8 @@ a {
 }
 
 
+
+/* start download now section */
 
 .download-now {
   background: #C3E7F6;
@@ -390,7 +394,7 @@ a {
   font-size: 24px;
 }
 
-/*contact us section*/
+/*start questions section*/
 .questions {
   padding: 80px 0;
 }
@@ -430,6 +434,7 @@ a {
   color: #000000;
 }
 
+/* start footer section */
 .footer {
   background-color: #313131;
   color: white;
@@ -447,6 +452,13 @@ a {
   padding:0 10px;
 }
 
+.footer .social-media ul li i{
+  color:#FFFFFF;
+  transition:color .1s ease-in-out
+}
+.footer .social-media ul li i:hover{
+  color:#007AFF;
+}
 
 .footer .last-footer{
   background-color: #252525;
@@ -475,6 +487,13 @@ a {
     margin: 0 auto .5rem;
   }
 
+  /*start navabr */
+  .navbar .logo img{
+    width: 90px;
+  }
+  .cta-default {
+    padding:0
+  }
   /*start header*/
   .header{
     margin:35px 0 0 0;
@@ -495,9 +514,15 @@ a {
   .services .service-wrapper {
     margin: 1% 0;
   }
+
   .services .service-wrapper img{
     display:none
   }
+  
+  .services .service-wrapper h2 i{
+    font-size:35px
+  }
+
 
   /*download now section*/
   .download-now .mockup-wrapper .download-now-mockup {
@@ -509,6 +534,17 @@ a {
   }
   .download-now .mockup-wrapper {
     height: 350px;
+  }
+
+  /*questions section*/
+  .questions .content h2{
+    line-height:30px;
+  }
+
+  /*contact-us section*/
+  .contact-us .contactUs-content{
+    text-align:center;
+    padding-right:0
   }
 }
 

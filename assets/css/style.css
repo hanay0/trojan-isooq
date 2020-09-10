@@ -20,7 +20,6 @@
 body{
   margin:0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 h1,h2,h3{
@@ -150,9 +149,6 @@ a {
 
 .header {
   margin: 140px 0 50px 0;
-  overflow-x: hidden;
- /*  height: 650px; */
-  overflow: hidden;
 }
 
 .header .content {
@@ -214,13 +210,6 @@ a {
   color: #19ABF2;
 }
 
-/*start features section*/
-.features {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-
 
 /*start services section*/
 .services {
@@ -268,12 +257,14 @@ a {
   width: 80%;
   z-index: -1;
   left: 130px;
+  top:100px
 }
 .services .service-wrapper .right-avatar {
   position: absolute;
   width: 80%;
   z-index: -1;
   right: 130px;
+  top:100px
 }
 
 
@@ -498,7 +489,7 @@ a {
     margin-bottom:2rem
   }
   .download-now .mockup-wrapper {
-    height: 350px;
+    height: 400px;
   }
   .download-now .mockup-wrapper .download-now-mockup {
     width:50%

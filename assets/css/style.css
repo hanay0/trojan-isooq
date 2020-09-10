@@ -153,7 +153,7 @@ a {
 .header {
   margin: 140px 0 50px 0;
   overflow-x: hidden;
-  height: 650px;
+ /*  height: 650px; */
   overflow: hidden;
 }
 
@@ -168,6 +168,7 @@ a {
 
 .header .header-mockup {
   position: relative;
+  min-height:600px
 }
 
 .header .header-mockup img {
@@ -196,17 +197,6 @@ a {
   z-index: 99999;
 }
 
-.header .header-mockup .icon-r {
-  right: 20px;
-  top: -60px;
-  width: 330px;
-}
-
-.header .header-mockup .icon-l {
-  right: 200px;
-  top: -95px;
-  width: 340px;
-}
 
 .header .stores {
   margin-top: 20px;
@@ -232,58 +222,7 @@ a {
   overflow-y: hidden;
 }
 
-.features .content h3 {
-  font-size: 24px;
-}
 
-.features .content2 {
-  margin-top: 330px;
-}
-
-.features .content2 h3 {
-  font-size: 24px;
-}
-
-.features .mockup {
-  width: 250px;
-  right: 220px;
-}
-
-.features .dish {
-  width: 550px;
-  top: 90px;
-  right: -50px;
-}
-
-.features .dish2 {
-  width: 400px;
-  top: 270px;
-  right: -280px;
-}
-
-.features .app-preview {
-  margin-top: 200px;
-  position: relative;
-  left: -50px;
-  min-height: 540px;
-}
-
-.features .app-preview img {
-  position: absolute;
-  width: 220px;
-}
-
-.features .app-preview .app-prev1 {
-  right: 0;
-}
-
-.features .app-preview .app-prev2 {
-  right: 230px;
-}
-
-.features .app-preview .app-prev3 {
-  right: 460px;
-}
 
 /*start services section*/
 .services {
@@ -294,6 +233,7 @@ a {
 .services .service-wrapper{
   margin:5% 0
 }
+
 
 .services .service-wrapper .row {
   margin-top: 60px;
@@ -310,7 +250,7 @@ a {
  
 }
 .services .service-wrapper h2 .service-icon{
-  color:#007AFF; 
+  color: #007AFF;
   margin:0 10px
 }
 
@@ -357,7 +297,8 @@ a {
   height:450px
 }
 .download-now .mockup-wrapper .download-now-mockup {
-  transform: translate(-55px, -130px);
+  transform: translate(-180px, -130px);
+  width:60%
 } 
 
 .download-now .big-cloud{  
@@ -497,12 +438,22 @@ a {
   /*start header*/
   .header{
     margin:35px 0 0 0;
-    height:550px;
   }
 
-  .header .header-mockup {
-    position: static;
-    display:none;
+  .header .header-mockup .mockup-1{
+    width: 70%;
+    right:50px;
+    z-index:-1
+  }
+  .header .header-mockup .run {
+    right: -50px;
+    top: 150px;
+    width: 300px;
+    z-index: 99999;
+}
+
+  .header-mockup .apples{
+    display: none;
   }
 
   /*start services section*/
@@ -513,26 +464,43 @@ a {
   .services .service-wrapper {
     margin: 1% 0;
   }
+  
 
-  .services .service-wrapper img{
-    display:none
+  .services .service-wrapper h2 img{
+    display:inline;
   }
   
   .services .service-wrapper h2 i{
     font-size:35px
   }
 
+  .services .service-wrapper .left-avatar {
+    position: absolute;
+    width: 80%;
+    z-index: -1;
+    left: 60px;
+  }
+  .services .service-wrapper .right-avatar {
+    position: absolute;
+    width: 80%;
+    z-index: -1;
+    right: 60px;
+  }
+
 
   /*download now section*/
   .download-now .mockup-wrapper .download-now-mockup {
-    transform: translate(0px, 0) rotate(-10deg);
-    width:50%
+    transform: translate(0px, 0);
+    width:70%
   }
   .download-now #app-store{
     margin-bottom:2rem
   }
   .download-now .mockup-wrapper {
     height: 350px;
+  }
+  .download-now .mockup-wrapper .download-now-mockup {
+    width:50%
   }
 
   /*questions section*/
@@ -545,6 +513,12 @@ a {
     text-align:center;
     padding-right:0
   }
+
+  /*footer section*/
+  .last-footer .text-left{
+    padding:0;
+    margin:0
+  }
 }
 
 @media screen and (max-width:992px)and(min-width:768px){
@@ -555,6 +529,19 @@ a {
 }
 
 @media screen and (max-width:1200px) and (min-width:768px){
+
+  /*header section*/
+  .header .header-mockup .mockup-1{
+    width: 80%;
+    right:200px;
+    z-index:-1
+  }
+  .header .header-mockup .run {
+    right: 30px;
+    top: 200px;
+    width: 320px;
+    z-index: 99999;
+}
   
   /*services section*/
   .services .service-wrapper .left-avatar,
@@ -567,10 +554,12 @@ a {
   }
 
   /*download-now section*/
+  .download-now .mockup-wrapper{
+    height:450px
+  }
   .download-now .mockup-wrapper .download-now-mockup {
-    width: 50%;
-    /* transform: translate(-115%, -160px); */
-    transform: translate(-80%, -110px);
+    width: 30%;
+    transform: translate(-2%, 0);
   }
    
 }

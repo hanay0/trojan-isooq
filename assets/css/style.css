@@ -174,21 +174,21 @@ a {
   right: 180px;
   top: 20px;
   width: 250px;
-  z-index: 999999;
+  z-index: 9999;
 }
 
 .header .header-mockup .run {
   right: -120px;
   top: 150px;
   width: 90%;
-  z-index: 99999;
+  z-index: 9999;
 }
 
 .header .header-mockup .apples {
-  left: -180px;
+  left: -50px;
   top: -20px;
   width: 750px;
-  z-index: 99999;
+  z-index: 999;
 }
 
 
@@ -267,6 +267,53 @@ a {
   top:100px
 }
 
+/*start features section*/
+  .features .promo-video{
+    position:fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:10000;
+    background:rgba(0, 0, 0, 0.95);
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .features .promo-video video{
+    position: relative;
+    max-width: 100%;
+    outline: none;
+  }
+  .features .promo-video .close-icon{
+    position:absolute;
+    top:100px;
+    right:120px;
+    cursor:pointer;
+    max-width:50px;
+  }
+  .promo-video.active{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .video-settings{
+    margin:0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  @media (max-width:991px){
+    .features .promo-video video{
+      max-width:90%;
+    }
+    .features .promo-video .close-icon{
+      right:50px
+    }
+  }
 
 
 /* start download now section */
@@ -312,7 +359,9 @@ a {
 .contact-us .contactUs-content{
   padding-right:80px
 }
-
+.contact-us .info{
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0740489);
+}
 .contact-us .info a{
   font-size:20px;
   color: #6B758F;
@@ -322,6 +371,7 @@ a {
 }
 .contact-us .info p{
   font-size: 24px;
+  width:70%
 }
 
 /*start questions section*/
@@ -438,12 +488,13 @@ a {
     right: -120px;
     top: 250px;
     width: 500px;
-    z-index: 99999;
+    z-index: 9999;
 }
 
   .header-mockup .apples{
     display: none;
   }
+  
 
   /*start services section*/
   .services {
@@ -454,7 +505,6 @@ a {
     margin: 1% 0;
   }
   
-
   .services .service-wrapper h2 img{
     width:8%;
     height:8%
@@ -519,9 +569,14 @@ a {
     border:1px solid transparent;
     margin:10px 0;
     border-radius:50px;
+    max-width:80%
   }
   .contact-us .info a{
     display: none;
+  }
+  .contact-us .info p{
+    font-size: 20px;
+    width:100%
   }
   .contact-us .contactUs-content{
     text-align:center;
@@ -553,7 +608,7 @@ a {
   .header .header-mockup .run {
     right: -10px;
     top: 300px;
-    z-index: 99999;
+    z-index: 9999;
 }
 
   
@@ -580,6 +635,12 @@ a {
     width: 30%;
     transform: translate(-2%, 0);
   }
+
+  /*start contact us section*/
+  .contact-us .info{
+    max-width:55%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0740489);
+  }
    
 }
 
@@ -591,6 +652,7 @@ a {
   .mobile-icons{
     color:#C2C2CA;
   }
+  
   
 }
 

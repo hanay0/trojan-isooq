@@ -366,12 +366,12 @@ a {
   font-size:20px;
   color: #6B758F;
 }
-.contact-us .info a i{
+.contact-us .info i{
   color: #007AFF;
 }
 .contact-us .info p{
   font-size: 24px;
-  width:70%
+  width:90%
 }
 
 /*start questions section*/
@@ -401,13 +401,13 @@ a {
 }
 
 .questions .content:hover {
-  border: 1px solid #FF8003;
+  border: 1px solid #007AFF;
   box-shadow: 0px 6px 15px -5px rgba(84, 84, 84, 0.75);
   transform: translateY(-10px);
 }
 
 .questions .content:hover h2 {
-  color: #FF8003;
+  color: #007AFF;
 }
 
 .questions .content:hover p {
@@ -442,13 +442,13 @@ a {
 
 .footer .last-footer{
   background-color: #252525;
-  height:50px;
+  height:auto;
   padding: 0 15%;
   margin-top:3rem
 }
 .footer .last-footer a{
   color: #FFFFFF;
-  margin:0 10px
+  margin:0 5px
 }
 .footer .last-footer a:hover{
   color:#007AFF;
@@ -474,6 +474,10 @@ a {
   .cta-default {
     padding:0
   }
+  .cta-success {
+    margin: 10px 0;
+    padding: 5px 30px;
+  }
   /*start header*/
   .header{
     margin:35px 0 0 0;
@@ -494,6 +498,9 @@ a {
   .header-mockup .apples{
     display: none;
   }
+  .header .stores {
+    margin-top:0;
+  }
   
 
   /*start services section*/
@@ -504,6 +511,8 @@ a {
   .services .service-wrapper {
     margin: 1% 0;
   }
+
+
   
   .services .service-wrapper h2 img{
     width:8%;
@@ -571,12 +580,13 @@ a {
     border-radius:50px;
     max-width:80%
   }
-  .contact-us .info a{
-    display: none;
-  }
+  
   .contact-us .info p{
     font-size: 20px;
     width:100%
+  }
+  .contact-us .large-media{
+    display:none
   }
   .contact-us .contactUs-content{
     text-align:center;
@@ -588,6 +598,7 @@ a {
     padding:0;
     margin:0
   }
+  
 }
 
 @media screen and (max-width:992px)and(min-width:768px){
@@ -652,12 +663,15 @@ a {
   .mobile-icons{
     color:#C2C2CA;
   }
-  
-  
+
 }
 
 @media screen and (min-width:1200px){
   .mobile-icons{
     display: none;
   }
+  .contact-us .info{
+    box-shadow: none
+  }
+  
 }

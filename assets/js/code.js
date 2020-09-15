@@ -1,22 +1,31 @@
 
 // create a function to show or hide the div which contains the video
-let videoWrapper = document.querySelector('.promo-video');
-let promoVideo = document.querySelector('.promo-video video');
-let playButton = document.querySelector('.video-img');
-let closeIcon = document.querySelector('.close-icon');
 
 
-// event to show the div which contains the video
+let playButton = document.querySelector('.video-img'),
+ videoWrapper = document.querySelector('.promo-video'),
+ closeIcon = document.querySelector('.close-icon'),
+ promoVideo = document.querySelector('.promo-video iframe');
+
 playButton.addEventListener('click', function(){
     videoWrapper.classList.toggle('active');
 });
 
-// another event to hide that div by removing active class
-closeIcon.addEventListener('click',function(){
+var stopVideos = function () {
+	var videos = document.querySelectorAll('iframe, video');
+	Array.prototype.forEach.call(videos, function (video) {
+		if (video.tagName.toLowerCase() === 'video') {
+			video.pause();
+		} else {
+			var src = video.src;
+			video.src = src;
+		}
+    });
     videoWrapper.classList.remove('active');
-    promoVideo.pause();
-    promoVideo.currentTime = 0;
-});
+};
 
 
+closeIcon.addEventListener('click',stopVideos)
+	
 
+ 

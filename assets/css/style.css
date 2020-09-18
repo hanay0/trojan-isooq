@@ -495,9 +495,9 @@ a {
     z-index: 9999;
 }
 
-  .header-mockup .apples{
+  /* .header-mockup .apples{
     display: none;
-  }
+  } */
   .header .stores {
     margin-top:0;
   }

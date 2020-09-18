@@ -178,7 +178,7 @@ a {
 }
 
 .header .header-mockup .run {
-  right: -120px;
+  right: 20px;
   top: 150px;
   width: 90%;
   z-index: 9999;
@@ -256,7 +256,7 @@ a {
   position: absolute;
   width: 80%;
   z-index: -1;
-  left: 150px;
+  right: 10px;
   top:100px;
 }
 .services .service-wrapper .right-avatar {
@@ -528,14 +528,14 @@ a {
     width: 80%;
     z-index: 1;
     top:80px;
-    left: 120px;
+    right:-35px;
   }
   .services .service-wrapper .right-avatar {
     position: absolute;
     width: 80%;
     z-index: 1;
     top:80px;
-    right:0;
+    right:-45px;
   }
 
 

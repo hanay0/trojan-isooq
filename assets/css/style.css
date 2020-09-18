@@ -185,7 +185,7 @@ a {
 }
 
 .header .header-mockup .apples {
-  left: -50px;
+  left: 10px;
   top: -20px;
   width: 750px;
   z-index: 999;
@@ -256,8 +256,8 @@ a {
   position: absolute;
   width: 80%;
   z-index: -1;
-  left: 130px;
-  top:100px
+  left: 150px;
+  top:100px;
 }
 .services .service-wrapper .right-avatar {
   position: absolute;

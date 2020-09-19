@@ -675,3 +675,12 @@ a {
   }
   
 }
+
+/*hover in mobile screens*/
+@media(hover: hover) and (pointer: fine) {
+  .questions .content:hover {
+    border: 1px solid #007AFF;
+    box-shadow: 0px 6px 15px -5px rgba(84, 84, 84, 0.75);
+    transform: translateY(-10px);
+  }
+}
